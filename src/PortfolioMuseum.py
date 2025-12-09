@@ -142,10 +142,18 @@ def LearnRylee():
     LearnMoreRylee = input ("Y or N? ")
     LearnMoreRylee = LearnMoreRylee.lower()
     if LearnMoreRylee == ("y"):
-        print ("I made this piece for my friend Andrea's birthday back in 2024.")
+        time.sleep(1.5)
+        print ("I made this piece for my friend Rylee's birthday back in 2024.")
+        time.sleep(1.5)
         print ("I wanted to capture all her favorite interests in this model.")
-        print ("The main thing I implemented here was her love of cats as it was the main bit of info I had going into it.")
-        print ("But I also implemented her favorite color combo in the name model.")
+        time.sleep(1.5)
+        print ("The big thing I wanted to implement as a center piece was the stage as she's a big theater fan.")
+        time.sleep(1.5)
+        print ("She's also a big artist, which led me to include the pencil.")
+        time.sleep(1.5)
+        print ("Then I implemented her love for games in the dice and meeples.")
+        time.sleep(1.5)
+        print ("Finally I also implemented her favorite color combo in the name model.")
         PersonalWingPieces()
     elif LearnMoreRylee == ("n"):
         PersonalWingPieces()
@@ -232,7 +240,7 @@ def FinalWingPieces():
             LearnCollage()
     elif FinalWingPieceChoice == ("leave"):
         time.sleep(1.5)
-        main()
+        Wings()
     else:
         time.sleep(1.5)
         print ("Sorry, I didn't catch that, let me repeat myself.")
@@ -332,10 +340,112 @@ def SchoolWingQuestions():
         print ("Would you like to go to a different wing?")
         ChangeWingPersonal = input ("Y or N? ")
         if ChangeWingPersonal ==("Y"):
-            main()
+            Wings()
         else:
             SchoolWingQuestions()
     else:
         time.sleep(1.5)
         print ("Sorry, I didn't catch that, let me repeat myself.")
-        SchoolWingQuestions()   
+        SchoolWingQuestions()
+
+def SchoolWingPieces():
+    time.sleep(1.5)
+    print ("What piece would you like to take a look at?")
+    time.sleep(1.5)
+    SchoolWingPieceChoice = input ("Platypus, Village, Robot, or Leave? ")
+    SchoolWingPieceChoice = SchoolWingPieceChoice.lower()
+    if SchoolWingPieceChoice == ("platypus"):
+        with Image.open ("Platypus.png") as img:
+            img.show()
+            img.close()
+        LearnPlatypus()
+    elif SchoolWingPieceChoice == ("village"):
+        with Image.open ("EaginSean_FinalProject_Sunset.jpg") as img:
+            img.show()
+            img.close()
+            LearnVillage()
+    elif SchoolWingPieceChoice == ("robot"):
+        with Image.open ("g00b3r.jpg") as img:
+            img.show()
+            img.close()
+            LearnRobot()
+    elif SchoolWingPieceChoice == ("leave"):
+        time.sleep(1.5)
+        Wings()
+    else:
+        time.sleep(1.5)
+        print ("Sorry, I didn't catch that, let me repeat myself.")
+        SchoolWingPieces()   
+
+def LearnPlatypus():
+    time.sleep(1.5)
+    print ("Would you like to learn more?")
+    time.sleep(1.5)
+    LearnMorePlatypus = input ("Y or N? ")
+    LearnMorePlatypus = LearnMorePlatypus.lower()
+    if LearnMorePlatypus == ("y"):
+        time.sleep(1.5)
+        print ("This is one of, if not my favorite model I've ever done, and it was made in class back in late 2023, early 2024 for a competition.")
+        time.sleep(1.5)
+        print ("I was tasked with creating a platypus zoo exhibit and I figured, challenge accepted.")
+        time.sleep(1.5)
+        print ("I love everything about how this project turned out, their environment, their slide, the area surrounding their habitat.")
+        time.sleep(1.5)
+        print ("But if there's one thing I'm proud of more than anything else, it's the platypi themselves, they're the perfect amount of cartoony that I absolutely love.")
+        SchoolWingPieces()
+    elif LearnMorePlatypus == ("n"):
+        SchoolWingPieces()
+    else:
+        time.sleep(1.5)
+        print ("Sorry, I didn't catch that, let me repeat myself.")
+        LearnPlatypus()
+
+def LearnVillage():
+    time.sleep(1.5)
+    print ("Would you like to learn more?")
+    time.sleep(1.5)
+    LearnMoreVillage = input ("Y or N? ")
+    LearnMoreVillage = LearnMoreVillage.lower()
+    if LearnMoreVillage == ("y"):
+        time.sleep(1.5)
+        print ("This is another one of my favorite models, and this one was just finished last week for one of my classes.")
+        time.sleep(1.5)
+        print ("The house design really stands out to me as something to be proud of, it's simple yet still has some complexity to it, the roof especially.")
+        time.sleep(1.5)
+        print ("I also absolutely love the mountain range and the tree in the background, I feel like I pulled them off so well..")
+        time.sleep(1.5)
+        print ("Combine these factors with the way that the sunset lighting looks, and I really feel like the whole project comes together quite nicely.")
+        SchoolWingPieces()
+    elif LearnMoreVillage == ("n"):
+        SchoolWingPieces()
+    else:
+        time.sleep(1.5)
+        print ("Sorry, I didn't catch that, let me repeat myself.")
+        LearnVillage()
+
+def LearnRobot():
+    time.sleep(1.5)
+    print ("Would you like to learn more?")
+    time.sleep(1.5)
+    LearnMoreRobot = input ("Y or N? ")
+    LearnMoreRobot = LearnMoreRobot.lower()
+    if LearnMoreRobot == ("y"):
+        time.sleep(1.5)
+        print ("I made this piece for my modeling class last semester in the spring.")
+        time.sleep(1.5)
+        print ("I really like this robot that I named g00b3r because he just kinda seems chill to me.")
+        time.sleep(1.5)
+        print ("My intention was to make a robot that looked relatively cartoonish with the very obvious shapes, while also figuring out a role for him to have.")
+        time.sleep(1.5)
+        print ("In the end I ended up going with an idea that revolves around him loving to listen with his radar and his headphones, whether it's people he knows, music, movies, he loves listening.")
+        time.sleep(1.5)
+        print ("I'm really proud of how he turned out in the end and would absolutely love to take the time to expand on the idea further in the future..")
+        FinalWingPieces()
+    elif LearnRobot == ("n"):
+        SchoolWingPieces()
+    else:
+        time.sleep(1.5)
+        print ("Sorry, I didn't catch that, let me repeat myself.")
+        LearnRobot()
+if __name__ == "__main__":
+    main()
