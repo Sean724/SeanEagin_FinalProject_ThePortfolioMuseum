@@ -65,9 +65,10 @@ def PersonalWingPieces():
             img.close()
         LearnCampbell()
     elif PersonalWingPieceChoice == ("rylee"):
-        with Image.open ("Campbell Render.jpg") as img:
+        with Image.open ("RyleeBirthdayGift.jpg") as img:
             img.show()
             img.close()
+            LearnRylee()
     elif PersonalWingPieceChoice == ("lidya"):
         with Image.open ("Lidya_Wideshot_Litup.jpg") as img:
             img.show()
@@ -233,7 +234,7 @@ def FinalWingPieces():
             img.show()
             img.close()
             LearnMask()
-    elif FinalWingPieceChoice == ("Collage"):
+    elif FinalWingPieceChoice == ("collage"):
         with Image.open ("photocollage-eagin-sean-final.jpg") as img:
             img.show()
             img.close()
@@ -325,7 +326,7 @@ def SchoolWing():
     time.sleep(1.5)
     print ("This is where all the 3D models done for class projects reside.")
     time.sleep(1.5)
-    print ("They may be class projects, but that doesn't mean I didn't put my heart and soul into")
+    print ("They may be class projects, but that doesn't mean I didn't put my heart and soul into them.")
     SchoolWingQuestions()
 
 def SchoolWingQuestions():
