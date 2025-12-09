@@ -32,6 +32,7 @@ def PersonalWing():
     print ("Birthday gifts are where my best work in my free time has been done, so all four of the pieces in this hall are birthday gifts I've made for friends. ")
     time.sleep(1.5)
     PersonalWingQuestions()
+
 def PersonalWingQuestions():
     print ("Would you like to take a look at our pieces here?")
     time.sleep(1.5)
@@ -65,7 +66,7 @@ def PersonalWingPieces():
             img.close()
         LearnCampbell()
     elif PersonalWingPieceChoice == ("rylee"):
-        with Image.open ("RyleeBirthdayGift.jpg") as img:
+        with Image.open ("RyleeBirthdayGift.jpeg") as img:
             img.show()
             img.close()
             LearnRylee()
@@ -111,6 +112,7 @@ def LearnCampbell():
         time.sleep(1.5)
         print ("Sorry, I didn't catch that, let me repeat myself.")
         LearnCampbell()
+
 def LearnLidya():
     time.sleep(1.5)
     print ("Would you like to learn more?")
@@ -216,7 +218,6 @@ def FinalWingQuestions():
         time.sleep(1.5)
         print ("Sorry, I didn't catch that, let me repeat myself.")
         FinalWingQuestions()
-
 
 def FinalWingPieces():
     time.sleep(1.5)
